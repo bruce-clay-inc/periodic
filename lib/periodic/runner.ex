@@ -1,4 +1,4 @@
-defmodule Periodic.Runner do
+defmodule Periodic2.Runner do
   use GenServer
 
   def start_link({ task_spec, interval, options }) when is_list(options) do

@@ -1,4 +1,4 @@
-defmodule Periodic do
+defmodule Periodic2 do
   use DynamicSupervisor
 
   @moduledoc File.read!("README.md")
@@ -43,7 +43,7 @@ defmodule Periodic do
    and is_integer(interval) and is_list(options)
 
    do
-    DynamicSupervisor.start_child(__MODULE__, { Periodic.Runner, { task_spec, interval, options }})
+    DynamicSupervisor.start_child(__MODULE__, { Periodic2.Runner, { task_spec, interval, options }})
   end
 
 
