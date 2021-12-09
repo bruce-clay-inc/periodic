@@ -1,4 +1,4 @@
-defmodule Periodic.MixProject do
+defmodule Periodic2.MixProject do
   use Mix.Project
 
   @description """
@@ -15,7 +15,7 @@ defmodule Periodic.MixProject do
 
   def project do
     [
-      app:     :periodic,
+      app:     :periodic2,
       version: "0.1.0",
       elixir:  "~> 1.6",
       deps:    [ {:ex_doc, "~> 0.14", only: :dev} ],
@@ -30,7 +30,7 @@ defmodule Periodic.MixProject do
 
   def application do
     [
-      mod: {Periodic.Application, []}
+      mod: {Periodic2.Application, []}
     ]
   end
 
